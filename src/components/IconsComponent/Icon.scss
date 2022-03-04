@@ -1,0 +1,14 @@
+.IconContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7%;
+
+  p{
+    flex-basis: 90%;
+  }
+
+  .Icon{
+    flex-basis: 20px;
+  }
+}

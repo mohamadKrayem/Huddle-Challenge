@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@500;600&display=swap');
+
+.header{
+  padding: 2rem 1rem;
+  background: url("../../assets/bg-hero-mobile.svg");
+  text-align: center;
+
+  .navbar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4.5rem;
+
+    img{
+      width: 7.5rem;
+
+      @media (min-width: 700px) {
+        width: 10rem;
+      }
+    }
+
+    button{
+      box-shadow: 1px 1px 10px 0.1rem rgba(0, 0, 0, 0.2);
+      font-size:12px;
+      border: 0;
+      border-radius: 50px;
+      width: 6.5rem;
+      padding: 0.3rem 1.1rem;
+      font-weight: 900;
+      background: white;
+      font-family: 'Poppins', sans-serif;
+      color: hsl(192, 100%, 9%);
+
+      &:hover{
+        color: hsl(208, 11%, 55%);
+      }
+
+      @media (min-width: 700px) {
+        padding: 0.7rem 1.1rem;
+        width: 10rem;
+      }
+    }
+  }
+
+  .header__main-container{
+    padding: 0 0.9rem;
+    color: hsl(192, 100%, 9%);
+    display: grid;
+    grid-template-columns: 1fr;
+
+    // grid-template-columns: 1fr 1fr;
+    @media screen and (min-width: 700px){
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 5%;
+      text-align: left;
+      align-items: center;
+    }
+
+    .header__main-fsection{
+      font-size: 1rem;
+
+      h2{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+      }
+  
+      p{
+        margin: 1.5rem 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+      }
+
+    }
+
+    img{
+      margin-top: 3rem ;
+      width: 100%;
+      margin-bottom:0;
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+        width: 100%;
+      }
+    }
+    
+  }
+
+  @media (min-width: 700px){
+    padding: 4.5rem 5rem;
+    background: url(../../assets/bg-hero-desktop.svg);
+  }
+  
+}
+
+.btn{
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  width: 15rem;
+  border: 0;
+  background: rgb(255, 82, 191);
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 1px 1px 10px 0.001rem rgba(0, 0, 0, 0.2);
+    background: rgba(255, 82, 191, 0.7);
+  }
+}
